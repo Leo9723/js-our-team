@@ -40,19 +40,13 @@ for (i=0; i<team.length; i++) {
     let cards = document.createElement('div')
     cards.classList.add('card');
     container.append(cards);
+/*     let img = member.immagine 
+    console.log(img) */
+        let img = `<img src="./img/${member.immagine}">`
+        let name = `<div class="nome-cognome">${member.nome}</div>` 
+        let role = `<div class="ruolo">${member.ruolo}</div>`
 
-    for(let key in member){
-        let card = member[key]
-        
-        let element = document.createElement('div')
-        element.classList.add('element');
-        element.innerText = card
-        cards.append(element);
-    }
-    
+        cards.innerHTML += img;
+        cards.innerHTML += name; 
+        cards.innerHTML += role;
 }
-
-let cards = document.createElement('div')
-cards.innerText = item_list
-shoppinglist.append(cards);
-

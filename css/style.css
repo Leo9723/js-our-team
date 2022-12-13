@@ -2,8 +2,55 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    margin: 20px;
+}
+p {
+    width: 50%;
+    margin: 0 auto;
+    color: rgb(42, 42, 42);
+}
+
+#container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+}
+
+img {
+ width: 100%;
+ border-radius: 10px 10px 0px 0px;
 }
 
 .card {
+    width: calc(100% / 3.5);
     margin: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: lightgray;
+    box-shadow: black 0px 0px 10px;
+    border-radius: 10px;
+}
+
+.nome-cognome, .ruolo {
+    margin: 10px;
+    background-color: lightgray;
+}
+
+.nome-cognome {
+    font-size: large;
+    font-weight: bold;
+}
+.ruolo  {
+    font-style: oblique;
 }
